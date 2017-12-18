@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPFeedBookVC">
+            <connections>
+                <outlet property="commitBtn" destination="zPd-1o-w3e" id="k2a-nV-dKR"/>
+                <outlet property="feedLb" destination="eVJ-Wj-tNX" id="HjD-LE-Geh"/>
+                <outlet property="textView" destination="tkB-gy-Qrn" id="jWT-Bw-OOb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yijian_bg" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-bz-d5a">
+                    <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-1o-w3e">
+                    <rect key="frame" x="30" y="624" width="354" height="60"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.73333333333333328" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="uNr-UE-Cj8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="提交意见">
+                        <color key="titleColor" red="0.11372549019607843" green="0.12549019607843137" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commitBtnClick:" destination="-1" eventType="touchUpInside" id="tvb-ZH-sxb"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tkB-gy-Qrn">
+                    <rect key="frame" x="30" y="100" width="354" height="503"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="告诉您想对我们说的话，我们会一直努力的!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVJ-Wj-tNX">
+                    <rect key="frame" x="50" y="92" width="314" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="DqJ-Fg-97D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zPd-1o-w3e" secondAttribute="trailing" constant="30" id="4eX-oo-qdq"/>
+                <constraint firstAttribute="trailing" secondItem="tkB-gy-Qrn" secondAttribute="trailing" constant="30" id="B3V-EP-oDd"/>
+                <constraint firstAttribute="trailing" secondItem="IZU-bz-d5a" secondAttribute="trailing" id="BKU-Q7-Eh6"/>
+                <constraint firstAttribute="bottom" secondItem="IZU-bz-d5a" secondAttribute="bottom" id="MGC-ah-32S"/>
+                <constraint firstItem="tkB-gy-Qrn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="RoL-pB-sfO"/>
+                <constraint firstItem="tkB-gy-Qrn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="TOa-Qi-2cd"/>
+                <constraint firstAttribute="trailing" secondItem="eVJ-Wj-tNX" secondAttribute="trailing" constant="50" id="Wi2-k2-9m2"/>
+                <constraint firstItem="IZU-bz-d5a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zat-50-EAe"/>
+                <constraint firstItem="eVJ-Wj-tNX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="ghf-u4-7PA"/>
+                <constraint firstItem="zPd-1o-w3e" firstAttribute="top" secondItem="tkB-gy-Qrn" secondAttribute="bottom" constant="21" id="gtM-Oc-TPu"/>
+                <constraint firstAttribute="bottom" secondItem="zPd-1o-w3e" secondAttribute="bottom" constant="52" id="nx7-fX-c7Z"/>
+                <constraint firstItem="zPd-1o-w3e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="uy4-8X-CZI"/>
+                <constraint firstItem="IZU-bz-d5a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xys-QT-fjk"/>
+                <constraint firstItem="eVJ-Wj-tNX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="zQb-hy-a0g"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yijian_bg" width="360" height="640"/>
+    </resources>
+</document>

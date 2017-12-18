@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPPresentMoneyVC">
+            <connections>
+                <outlet property="allMoneyBtn" destination="ud2-oW-eVo" id="JQ8-HW-CJC"/>
+                <outlet property="cardLb" destination="CSA-eY-uZX" id="Q2I-Ee-mke"/>
+                <outlet property="clickTiXianBtn" destination="TQ8-xr-QVG" id="GZo-Nc-BEl"/>
+                <outlet property="tf" destination="EEH-af-hVp" id="ddV-y1-LFf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡  中国招商银行  (5621)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSA-eY-uZX">
+                    <rect key="frame" x="0.0" y="105" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="STV-1v-gzu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入金额" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-af-hVp">
+                    <rect key="frame" x="98.5" y="163" width="178" height="74"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="178" id="5RJ-Cb-nij"/>
+                        <constraint firstAttribute="height" constant="74" id="Qgy-42-zwQ"/>
+                    </constraints>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-oW-eVo">
+                    <rect key="frame" x="185.5" y="244" width="92" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="IdG-NG-WDE"/>
+                        <constraint firstAttribute="width" constant="92" id="UDP-YC-ePQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="全部提现">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAllMoneyPresent:" destination="-1" eventType="touchUpInside" id="TwI-x7-3Ka"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ8-xr-QVG">
+                    <rect key="frame" x="62.5" y="325" width="250" height="53"/>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.12549019607843137" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="AwL-mt-Edr"/>
+                        <constraint firstAttribute="width" constant="250" id="tu1-rW-dcy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="提  现">
+                        <color key="titleColor" red="0.84705882352941175" green="0.72941176470588232" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickTiXian:" destination="-1" eventType="touchUpInside" id="DxW-aI-26Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-04-gVd">
+                    <rect key="frame" x="295" y="105" width="21" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CSA-eY-uZX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="6Ij-1Z-9CL"/>
+                <constraint firstItem="EEH-af-hVp" firstAttribute="top" secondItem="CSA-eY-uZX" secondAttribute="bottom" constant="37" id="8bp-Mu-rpp"/>
+                <constraint firstItem="ud2-oW-eVo" firstAttribute="top" secondItem="EEH-af-hVp" secondAttribute="bottom" constant="7" id="914-FP-4Hw"/>
+                <constraint firstItem="EEH-af-hVp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JdT-Wo-DbU"/>
+                <constraint firstItem="TQ8-xr-QVG" firstAttribute="top" secondItem="ud2-oW-eVo" secondAttribute="bottom" constant="66" id="KKx-0E-M0H"/>
+                <constraint firstAttribute="trailing" secondItem="CSA-eY-uZX" secondAttribute="trailing" id="MJD-FN-hRB"/>
+                <constraint firstItem="TQ8-xr-QVG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mab-vn-nN3"/>
+                <constraint firstItem="CSA-eY-uZX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qXg-Id-n2h"/>
+                <constraint firstItem="ud2-oW-eVo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="44" id="skv-sF-Ibq"/>
+                <constraint firstItem="CSA-eY-uZX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yeZ-80-2h0"/>
+            </constraints>
+            <point key="canvasLocation" x="-184" y="-4"/>
+        </view>
+    </objects>
+</document>

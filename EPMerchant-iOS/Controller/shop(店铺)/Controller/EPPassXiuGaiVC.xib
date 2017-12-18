@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPPassXiuGaiVC">
+            <connections>
+                <outlet property="submitBtn" destination="0Qe-a0-bsz" id="5t4-sQ-VUY"/>
+                <outlet property="tfAgainPass" destination="Ps8-Zz-f0c" id="Kf1-io-X60"/>
+                <outlet property="tfNewPass" destination="5zh-aY-gph" id="zaQ-2y-wi9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入新密码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5zh-aY-gph">
+                    <rect key="frame" x="91" y="179" width="232" height="44"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="232" id="2Dy-a6-GR6"/>
+                        <constraint firstAttribute="height" constant="44" id="mB0-QA-97L"/>
+                    </constraints>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入新密码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-Zz-f0c">
+                    <rect key="frame" x="91" y="253" width="232" height="44"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JRP-vC-t8n"/>
+                        <constraint firstAttribute="width" constant="232" id="SOW-ij-3cJ"/>
+                    </constraints>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-a0-bsz">
+                    <rect key="frame" x="91" y="327" width="232" height="44"/>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.12549019607843137" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HH3-3b-yNP"/>
+                        <constraint firstAttribute="width" constant="232" id="cDG-Mj-LGn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="提  交">
+                        <color key="titleColor" red="0.84705882352941175" green="0.73333333333333328" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitClickBtn:" destination="-1" eventType="touchUpInside" id="spQ-B9-aLV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Qe-a0-bsz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GLf-gB-sma"/>
+                <constraint firstItem="Ps8-Zz-f0c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b5H-Bd-UXz"/>
+                <constraint firstItem="5zh-aY-gph" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ciB-39-kCE"/>
+                <constraint firstItem="Ps8-Zz-f0c" firstAttribute="top" secondItem="5zh-aY-gph" secondAttribute="bottom" constant="30" id="gbb-tP-dkn"/>
+                <constraint firstItem="5zh-aY-gph" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="179" id="qjO-Cc-4Ii"/>
+                <constraint firstItem="0Qe-a0-bsz" firstAttribute="top" secondItem="Ps8-Zz-f0c" secondAttribute="bottom" constant="30" id="ujO-QW-sdK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>

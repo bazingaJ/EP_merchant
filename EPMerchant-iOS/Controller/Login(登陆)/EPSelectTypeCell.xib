@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="29" id="KGk-i7-Jjw" customClass="EPSelectTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-uS-OfF">
+                        <rect key="frame" x="20" y="10" width="70" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="YG4-2X-URx"/>
+                            <constraint firstAttribute="height" constant="15" id="r4P-LG-gZR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmT-bK-Ary">
+                        <rect key="frame" x="285" y="5" width="15" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="h3E-vf-fcn"/>
+                            <constraint firstAttribute="width" constant="15" id="n0y-t1-wL0"/>
+                        </constraints>
+                        <state key="normal" image="空心选择圆"/>
+                        <state key="selected" image="实心选择圆"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bW-QS-bA6">
+                        <rect key="frame" x="20" y="28" width="280" height="1"/>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ECn-n0-P81"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="YmT-bK-Ary" secondAttribute="trailing" constant="12" id="Kmt-eU-5wq"/>
+                    <constraint firstItem="pMI-uS-OfF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="L7R-Vw-xwu"/>
+                    <constraint firstItem="pMI-uS-OfF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="Owi-1x-6CM"/>
+                    <constraint firstItem="9bW-QS-bA6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="eBV-RE-yk0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9bW-QS-bA6" secondAttribute="trailing" constant="12" id="npv-v5-UYa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YmT-bK-Ary" secondAttribute="bottom" constant="-5" id="wM1-rg-kkL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9bW-QS-bA6" secondAttribute="bottom" constant="-9" id="zOJ-go-KQH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="YmT-bK-Ary" id="MlZ-u3-lFs"/>
+                <outlet property="selectLb" destination="pMI-uS-OfF" id="7YN-3p-vYw"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="368.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="实心选择圆" width="10" height="10"/>
+        <image name="空心选择圆" width="10" height="10"/>
+    </resources>
+</document>

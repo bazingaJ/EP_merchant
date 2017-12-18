@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="EPShopCell3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经营范围" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkc-fs-F38">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="6Qd-B4-Mdg"/>
+                            <constraint firstAttribute="height" constant="21" id="mtT-Gy-cQN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-Pi-R9f">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="MN1-B2-WUW"/>
+                            <constraint firstAttribute="height" constant="22" id="Zwz-Yr-1MC"/>
+                        </constraints>
+                        <state key="normal" image="no_choice_goods"/>
+                        <state key="selected" image="choice_goods"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvW-X6-xvU">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="112-MU-7LL"/>
+                            <constraint firstAttribute="width" constant="37" id="uH4-Dz-D1S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="娱乐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDV-Nw-Aw3">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="C2q-vZ-IMg"/>
+                            <constraint firstAttribute="height" constant="21" id="WKd-Fe-Lkn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku2-19-fLM">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="6lW-Xa-4VV"/>
+                            <constraint firstAttribute="height" constant="22" id="cf5-UO-nQu"/>
+                        </constraints>
+                        <state key="normal" image="no_choice_goods"/>
+                        <state key="selected" image="choice_goods"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="餐饮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMX-Mn-r4q">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="dxo-1K-bFN"/>
+                            <constraint firstAttribute="height" constant="21" id="qm1-rC-5E6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkh-bQ-ZHf">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="ZAS-ay-Ecs"/>
+                            <constraint firstAttribute="height" constant="21" id="Zw0-Tg-EtG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHy-i2-7ma">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="8tP-Ns-rHZ"/>
+                        </constraints>
+                        <state key="normal" image="no_choice_goods"/>
+                        <state key="selected" image="choice_goods"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-oc-LnA">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="gll-yy-wUq"/>
+                            <constraint firstAttribute="height" constant="22" id="gpq-Pq-eFA"/>
+                        </constraints>
+                        <state key="normal" image="no_choice_goods"/>
+                        <state key="selected" image="choice_goods"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bkh-bQ-ZHf" firstAttribute="top" secondItem="HvW-X6-xvU" secondAttribute="bottom" constant="13" id="2CN-GW-KNZ"/>
+                    <constraint firstItem="zkc-fs-F38" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="2M0-U9-Kvo"/>
+                    <constraint firstItem="cMX-Mn-r4q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="3Yt-yE-aTU"/>
+                    <constraint firstItem="0VP-Pi-R9f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="4ZY-or-xOz"/>
+                    <constraint firstItem="HvW-X6-xvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="BEK-cS-gJE"/>
+                    <constraint firstItem="vDV-Nw-Aw3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Dns-sr-aYm"/>
+                    <constraint firstItem="vDV-Nw-Aw3" firstAttribute="leading" secondItem="Mtk-oc-LnA" secondAttribute="trailing" constant="3" id="KPc-rr-ndJ"/>
+                    <constraint firstItem="Mtk-oc-LnA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="R1L-bA-4KJ"/>
+                    <constraint firstItem="0VP-Pi-R9f" firstAttribute="leading" secondItem="zkc-fs-F38" secondAttribute="trailing" constant="26" id="TFf-10-8YJ"/>
+                    <constraint firstItem="cHy-i2-7ma" firstAttribute="bottom" secondItem="Bkh-bQ-ZHf" secondAttribute="bottom" id="W1h-Yz-VTY"/>
+                    <constraint firstItem="cHy-i2-7ma" firstAttribute="trailing" secondItem="0VP-Pi-R9f" secondAttribute="trailing" id="Y3X-aG-bb3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cMX-Mn-r4q" secondAttribute="trailing" constant="4" id="att-Nx-LKl"/>
+                    <constraint firstItem="Bkh-bQ-ZHf" firstAttribute="leading" secondItem="cHy-i2-7ma" secondAttribute="trailing" constant="8" symbolic="YES" id="bfn-uM-5hA"/>
+                    <constraint firstItem="ku2-19-fLM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="doX-OI-54M"/>
+                    <constraint firstItem="zkc-fs-F38" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="kv6-Og-Eza"/>
+                    <constraint firstItem="cMX-Mn-r4q" firstAttribute="leading" secondItem="ku2-19-fLM" secondAttribute="trailing" constant="7" id="pU8-Wh-EiK"/>
+                    <constraint firstItem="HvW-X6-xvU" firstAttribute="leading" secondItem="0VP-Pi-R9f" secondAttribute="trailing" constant="7" id="rSY-g3-rCj"/>
+                    <constraint firstItem="vDV-Nw-Aw3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="59" id="sBL-dS-2WH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="0VP-Pi-R9f" id="vQ5-9h-rDf"/>
+                <outlet property="btn2" destination="Mtk-oc-LnA" id="IXA-8R-hSh"/>
+                <outlet property="btn3" destination="ku2-19-fLM" id="0fC-hP-gj7"/>
+                <outlet property="btn4" destination="cHy-i2-7ma" id="gCA-5M-GJ0"/>
+            </connections>
+            <point key="canvasLocation" x="318" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="choice_goods" width="16" height="16"/>
+        <image name="no_choice_goods" width="16" height="16"/>
+    </resources>
+</document>

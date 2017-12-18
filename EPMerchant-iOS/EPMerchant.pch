@@ -1,0 +1,87 @@
+//
+//  EPMerchant.pch
+//  EPMerchant-iOS
+//
+//  Created by jeader on 16/6/24.
+//  Copyright © 2016年 jeader. All rights reserved.
+//
+
+#ifndef EPMerchant_pch
+#define EPMerchant_pch
+#import "UIViewController+NavigationBar.h"
+#import "UIView+EPFrame.h"
+#import "GetData.h"
+#import "AFNetworking.h"
+#import "EPTool.h"
+#import "EPRSA.h"
+#import "UIImageView+WebCache.h"
+#import "JKCountDownButton.h"
+#import "UIButton+CountDown.h"
+#import "MJExtension.h"
+#import "TTTAttributedLabel.h"
+#import "FileHander.h"
+#import "MJRefresh.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// define NSLog(@"") become CYLog(...)
+#if DEBUG
+
+#define CYLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define CYLog(...)
+
+#endif
+
+// define color with RGB
+#define ColorWithRGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define RGBColor(a,b,c)  [UIColor colorWithRed:a/255.0 green:b/255.0 blue:c/255.0 alpha:1.0]
+#define WIDTH(a,b) (a/b*[UIScreen mainScreen].bounds.size.width)
+#define HEIGHT(a,b) ((a/b)*[UIScreen mainScreen].bounds.size.height)
+//  clientId
+#define CLIENTID [[NSUserDefaults standardUserDefaults]objectForKey:@"clientID"]
+//loginTime
+#define LOGINTIME [[NSUserDefaults standardUserDefaults]objectForKey:@"loginTime"]
+//用户名
+#define USERNAME [[NSUserDefaults standardUserDefaults]objectForKey:@"userName"]
+//userId
+#define USERID [[NSUserDefaults standardUserDefaults]objectForKey:@"userId"]
+//公钥
+#define publicKeyRSA [[NSUserDefaults standardUserDefaults]objectForKey:@"publicKey"]
+//推送是否关闭
+#define isColse [[NSUserDefaults standardUserDefaults]objectForKey:@"isColse"]
+#define EXITNUM [[NSUserDefaults standardUserDefaults]objectForKey:@"exitNum"]
+#define ORDERNUM [[NSUserDefaults standardUserDefaults]objectForKey:@"orderNum"]
+
+#define count1 [[NSUserDefaults standardUserDefaults]objectForKey:@"order"]
+#define count2 [[NSUserDefaults standardUserDefaults]objectForKey:@"exit"]
+//店铺营收
+#define DAY [[NSUserDefaults standardUserDefaults]objectForKey:@"day"]
+#define ZHOU [[NSUserDefaults standardUserDefaults]objectForKey:@"zhou"]
+#define MONTH [[NSUserDefaults standardUserDefaults]objectForKey:@"month"]
+#define EPUrl @"http://114.55.57.237/tad/client"
+//http://192.168.1.155:8080/tad/client
+//#define EPUrl @"http://192.168.1.155:8080/tad/client"
+// is phone or simulator 1:simulator , 0:phone
+#if TARGET_IPHONE_SIMULATOR
+#define SIMULATOR 1
+#elif TARGET_OS_IPHONE
+#define SIMULATOR 0
+#endif
+
+// screen width and height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// white color  for login view text
+#define WhiteColor ColorWithRGB(255, 255, 255, 0.71)
+
+// current view size
+#define CurrentViewWidth self.bounds.size.width
+#define CurrentViewHeight self.bounds.size.height
+#define Margin 12
+
+
+#endif /* EPMerchant_pch */
